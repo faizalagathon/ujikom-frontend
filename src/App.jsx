@@ -18,7 +18,7 @@ function App() {
           <Route index element={<Dashboard />} />
           <Route path="/album" element={<Album />} />
           <Route path="/album/tambah" element={<AlbumTambah />} />
-          <Route path="/foto/tambah" element={<FotoTambah />} />
+          <Route path="/foto/tambah/:id" element={<FotoTambah />} />
           <Route path="/album/:id" element={<AlbumDetail />} />
         </Route>
         <Route
