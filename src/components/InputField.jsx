@@ -12,7 +12,7 @@ export default function InputField({
         type={type}
         name={id}
         id={id}
-        className="focus:outline-none p-1"
+        className="border border-slate-400 focus:border-slate-600 focus:outline-none p-1"
         value={value}
         onChange={onChange}
       />
