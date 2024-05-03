@@ -17,7 +17,7 @@ export default function Dashboard() {
           <div className="">Tidak Ada Data</div>
         ) : (
           data.data.map((item, i) => (
-            <Link>
+            <Link to={'/foto/' + item.id}>
               <img
                 src={API_URL + `/getFoto/${item.file}`}
                 className="w-fit h-fit"

@@ -34,7 +34,7 @@ export default function AlbumTambah() {
       }
     } catch (error) {
       console.error(error);
-      setMessageErrorValidasi(error.response.data.errors);
+      setMessageErrorValidasi(error.response.data.errors ?? '');
     }
     setLoadingSubmit(false);
   };
